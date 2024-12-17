@@ -146,6 +146,11 @@ nav
         margin-top: 4.3vh;
     }
 
+    .logo
+    {
+        margin-left: -5%;
+    }
+
     .logo_img {
         width: 7rem;
     }   
