@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const marqueeTexts = document.querySelectorAll('.marquee-text'); 
 
 
-    marqueeContainer.addEventListener('click', () => {
+    marqueeContainer.addEventListener('mouseenter', () => {
         marqueeTexts.forEach(text => {
             text.style.animationPlayState = 'paused';
         });
