@@ -98,7 +98,7 @@
 
     .navbar_user_access ul
     {
-        display: contents;
+        display: inline-flex;
     }
 
     .icon_group .icon_img li i {
