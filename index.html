@@ -3,141 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-
-    <!-- <link rel="stylesheet" href="./CSS/bootstrap.min.css"> -->
-    <script src="./JS/bootstrap.bundle.min.js"></script>
     <title>chaand</title>
 
-    <link rel="stylesheet" href="./CSS/home.css">
+    <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
+    <!-- bootstrap js -->
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+
+    <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- title icon -->
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
 
+    <!-- custom css -->
+    <link rel="stylesheet" href="./CSS/home.css">
+
+    <!-- custom js -->
     <script src="./JS/home.js"></script>
-    
+
 </head>
 <body>
 
-    <header>    
-      
-      
-      <!-- Marquee container -->
-      <div class="marquee-container">
+    <!-- marquee-->
+    <div class="marquee-container">
         <div class="marquee-text">&#9675; Linen your way &#9675;</div>
         <div class="marquee-text">&#9675; Sustainable &#9675; Handcrafted &#9675; Timeless luxury &#9675;</div>
     </div>
 
-    <nav class="navbar navbar-expand-lg bg-light text-uppercase fs-6 p-3 border-bottom align-items-center">
-            <div class="container-fluid">
-              <div class="row d-flex justify-content-between align-items-center w-100">
-        
-                <div class="col-auto brand_logo">
-                  <a class="navbar-brand text-white" href="#">
-                    <img class="logo_img" src="./images/logo b.png" alt="">
-                  </a>
-                </div>
-        
-                <div class="col-auto content_navbar">
 
-                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                    </div>
-        
-                    <div class="offcanvas-body">
-                      <ul class="navbar-nav justify-content-end flex-grow-1 gap-1 gap-md-5 pe-3">
-                        <li class="nav-item dropdown">
-                          <a class="nav-link nav_text" href="#" id="dropdownHome" data-bs-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Home</a>
-
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link nav_text" href="#" id="dropdownShop" data-bs-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Products</a>
-
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle nav_text" href="#" id="dropdownBlog" data-bs-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Collections</a>
-                          <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownBlog">
-                            <li>
-                              <a href="index.html" class="dropdown-item item-anchor">Collection Padma</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link nav_text"  href="#" id="dropdownPages" data-bs-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">About Us</a>
-
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link nav_text" href="#">Contact</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                          <a class="nav-link nav_text" href="#">Contact</a>
-                        </li> -->
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-auto navbar_user_access">
-                  <ul class="navbar-nav">
-                    <li class="nav-item search_bar">
-                      <div class="container d-flex search_box">
-                        <div class="input-group col-sm-7 input-group-lg">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text google search_box_logo">
-                              <img src="./images/favicon.png">
-                            </span>
-                          </div>
-                          <input type="text" class="form-control">
-                          <div class="input-group-append">
-                            <span class="input-group-text microphone">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="45" fill="currentColor" class="bi bi-search"
-                                viewBox="0 0 16 16">
-                                <path
-                                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                              </svg>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-
-
-                    <div class="icon_group d-flex justify-content-end align-items-center">
-
-                      <div class="icon_img d-flex align-items-center">
-                        <li class="nav-item"><i class="fa fa-shopping-cart"></i></li>
-                        <li class="nav-item"><i class="fa fa-user"></i></li>
-                      </div>
-                      <li class="nav-item">
-                        <button class="navbar-toggler slider_icon" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                    </li>
-                  </div>
-                  </ul>
-                </div>
-                
-        
-              </div>
-        
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg p-3 fs-6 align-items-center">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="#" class="navbar-brand">
+                    <img class="logo_img" src="./images/logo b.png" alt="logo">
+                </a>
             </div>
-          </nav>
-        
-    </header>
-
-
+    
+            <div class="search_bar ms-auto">
+                <div class="search_box">
+                    <input type="text" name="search" id="search" placeholder=" " required>
+                    <label for="search" class="floating_label">Search</label>
+                    <i class="fa fa-search"></i>
+                </div>
+                               
+            </div>
+        </div>
+    </nav>
+    
 
     
 </body>
