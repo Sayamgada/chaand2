@@ -132,11 +132,6 @@ nav
     pointer-events: none;
 }
 
-@media (max-width: 768px) {
-    .search_box input {
-        width: 15rem;
-    }
-}
 
 
 @media (max-width: 768px) {
@@ -156,6 +151,6 @@ nav
     }   
 
     .search_box input {
-        width: 15rem;
+        width: 10rem;
     }
 }
