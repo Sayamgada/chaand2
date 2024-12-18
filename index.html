@@ -22,6 +22,8 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./CSS/home.css">
+
+    
 </head>
 <body>
     <!-- Marquee -->
@@ -32,55 +34,72 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white p-3 fs-6 align-items-center shadow-sm">
-        <div class="container-fluid">
-            <!-- Logo -->
+        <div class="container-fluid d-flex align-items-center">
             <a class="navbar-brand" href="#">
                 <img class="logo_img" src="./images/logo b.png" alt="logo">
             </a>
-
-            <!-- Toggler Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        
+            <div class="search_box_container me-auto">
+                <div class="search_box position-relative">
+                    <input type="text" name="search" id="search" placeholder=" " required>
+                    <label for="search" class="floating_label">Search</label>
+                    <i class="fa fa-search position-absolute end-0 me-2"></i>
+                </div>
+            </div>
+        
+            <button class="navbar-toggler order-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-        </div>
-
-        <!-- Search Box (Always visible but positioned below the logo only on small screens) -->
-        <div class="search_box_container">
-            <div class="search_box position-relative">
-                <input type="text" name="search" id="search" placeholder=" " required>
-                <label for="search" class="floating_label">Search</label>
-                <i class="fa fa-search position-absolute end-0 me-2"></i>
+        
+            <div class="collapse navbar-collapse content_bar order-2" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="collectionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Collections
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="collectionsDropdown">
+                            <li><a class="dropdown-item" href="#">Collection Padma</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        
+            <!-- desktop view -->
+            <div class="icon-bar d-none d-lg-flex align-items-center ms-lg-3 order-2">
+                <a href="/cart" class="nav-link position-relative me-3">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                </a>
+                <a href="/account" class="nav-link">
+                    <i class="fa fa-user"></i>
+                </a>
+            </div>
+        
+            <!-- mobile view -->
+            <div class="icon-bar d-flex d-lg-none align-items-center order-1 ms-auto">
+                <a href="/cart" class="nav-link position-relative me-3">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                </a>
+                <a href="/account" class="nav-link">
+                    <i class="fa fa-user"></i>
+                </a>
             </div>
         </div>
-
-        <!-- Navbar Links -->
-        <div class="collapse navbar-collapse content_bar" id="navbarContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Products</a>
-                </li>
-                <!-- Dropdown Menu -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="collectionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Collections
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="collectionsDropdown">
-                        <li><a class="dropdown-item" href="#">Collection Padma</a></li>
-                        <!-- <li><hr class="dropdown-divider"></li> -->
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+        
+    </nav>        
 
 
     <section class="main" style="background-color: aqua; height: 200px;"> 
@@ -92,25 +111,20 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <!-- Section 1: Logo -->
                 <div class="col-md-4 text-center text-md-left mb-4" style="align-self: center;">
                     <img src="./images/footer_logo.png" alt="Brand Logo" class="img-fluid" style="max-width: 200px; align-items:center ; ">
-                    <!-- <p>Linen your way</p> -->
                 </div>
 
-                <!-- Section 2: Quick Links -->
                 <div class="col-md-4 mb-4">
                     <h4>Quick Links</h4>
                     <ul class="list-unstyled">
                         <li><a href="/wash-care">Wash Care</a></li>
                         <li><a href="/about">About Us</a></li>
-                        <li><a href="/contact">Contact Us</a></li>
                         <li><a href="/terms">Terms & Conditions</a></li>
-                        <li><a href="/delivery-return">Delivery & Return</a></li>
+                        <li><a href="/delivery-return">Returns & Exchange</a></li>
                     </ul>
                 </div>
 
-                <!-- Section 3: Contact Information -->
                 <div class="col-md-4 mb-4 f-sec-3">
                     <h4>Contact Us</h4>
                     <a href="mailto:your-email@example.com"><i class="fa-solid fa-envelope"></i> mokshiigada@gmail.com</a><br><br>
