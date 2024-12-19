@@ -16,3 +16,26 @@ document.addEventListener('DOMContentLoaded', () => {
     newText.textContent = '| New Arrivals |';
     marqueeContainer.appendChild(newText);
 });
+
+
+const sliderItems = document.querySelectorAll('.slider-item');
+const indicators = document.querySelector('.carousel-indicator');
+
+sliderItems.forEach((item, index) => {
+    const dot = document.createElement('span');
+    dot.dataset.index = index;
+    indicators.appendChild(dot);
+});
+
+indicators.children[0].classList.add('active');
+
+let currentIndex = 0;
+function updateActiveDot() {
+    indicators.querySelectorAll('span').forEach(dot => dot.classList.remove('active'));
+    indicators.children[currentIndex].classList.add('active');
+}
+
+setInterval(() => {
+    currentIndex = (currentIndex + 1) % sliderItems.length;
+    updateActiveDot();
+}, 3000);
