@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Professional Marquee</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Marquee container */
+        .marquee-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 6vh;
+            overflow: hidden;
+            background: #166e22; /* Clean white background */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        /* Marquee text */
+        .marquee-text {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #333; /* Neutral, professional color */
+            opacity: 0;
+            color: #ffffff;
+            animation: marquee-animation 8s linear infinite;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* First marquee animation */
+        .marquee-text:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        /* Second marquee animation */
+        .marquee-text:nth-child(2) {
+            animation-delay: 4s;
+        }
+
+        /* Fade-in and slide-up animation */
+        @keyframes marquee-animation {
+            0% { transform: translateY(100%); opacity: 0; }
+            15% { transform: translateY(0); opacity: 1; }
+            40% { transform: translateY(0); opacity: 1; }
+            50% { transform: translateY(-100%); opacity: 0; }
+            100% { transform: translateY(-100%); opacity: 0; }
+        }
+
+        /* Pause on hover */
+        .marquee-container:hover .marquee-text {
+            animation-play-state: paused;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .marquee-text {
+                font-size: 1.3rem;
+            }
+        }
+
+        .footer {
+            background-color: #f8f9fa;
+            padding: 40px 0;
+        }
+        .footer h4 {
+            margin-bottom: 20px;
+        }
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer a, i, p{
+            color: #166e22;
+        }
+        
+        @media(max-width:767px){   
+            .footer{
+                display: flex;
+                align-items: center;
+                /* justify-content: center; */
+                text-align: center;
+            }
+        }
+
+        .tnc-h{
+            color: #166e22;
+        }
+
+    
+        /* .about-sub-h{
+            color: #166e22;
+        } */
+
+
+
+    </style>
+</head>
+<body>
+    <!-- Marquee container -->
+    <div class="marquee-container">
+        <div class="marquee-text">| Linen your way |</div>
+        <div class="marquee-text">| Sustainable | Handcrafted | Timeless luxury |</div>
+    </div>
+    
+    <!-- <div style="height: 80vh; width: 100%;"></div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <main class="container-fluid my-5">
+    <section class="container">
+
+        <h1 class="text-center py-5 tncc">About Us</h1>
+
+        <section class="mb-4 py-1">
+            <h2 class="about-sub-h">Welcome to CHAAND</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div>Where timeless elegance meets sustainable fashion.</div>
+                    <div>Inspired by the legacy of my beloved grandfather, Panachand, CHAAND carries the blessings of his name and the vision to create a brighter, conscious future. Rooted in authenticity and guided by our commitment to sustainability, CHAAND celebrates the natural beauty of linen — a fabric as enduring and versatile as the moon that lights up our name.</div>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/footer_log.png" alt="Linen Clothing" class="img-fluid rounded shadow-sm">
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-4 py-1">
+            <h2 class="about-sub-h">Our Philosophy</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6 order-md-2">
+                    <div>At CHAAND, we believe that fashion should not only make you look good but also feel good — about what you wear and how it’s made. That’s why our collections are crafted with:</div>
+                    <ul class="list-unstyled tnc"><br>
+                        <li>&bull; <strong>Pure Linen:</strong> A breathable, durable, and biodegradable fabric that gets softer with every wear.</li>
+                        <li>&bull; <strong>Sustainable Practices:</strong> From ethical sourcing to eco-friendly packaging, every step of our process is designed to minimize our environmental impact.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <img src="images/footer_lgo.png" alt="Sustainability Practices" class="img-fluid rounded shadow-sm">
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-4 py-1">
+            <h2 class="about-sub-h">Our Mission</h2>
+            <div>To become a leading purveyor of premium linen clothing, inspiring individuals to make stylish, conscious choices. We aim to harmonize fashion and sustainability, proving that elegance can coexist with responsibility.</div>
+        </section>
+
+        <section class="mb-4 py-1">
+            <h2 class="about-sub-h">Our Collection</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div>Explore a world of thoughtfully designed co-ord sets, dresses, and more, each piece crafted to embody understated luxury and effortless charm. Whether you’re dressing for work, leisure, or a special moment, CHAAND ensures you’ll shine in comfort and style.</div>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/footer_ogo.png" alt="Linen Collection" class="img-fluid rounded shadow-sm">
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-4 py-1">
+            <h2 class="about-sub-h">Why Choose CHAAND?</h2>
+            <ul class="list-unstyled tnc">
+                <li>&bull; <strong>Timeless Designs:</strong> Made to last beyond trends, offering versatility for any occasion.</li>
+                <li>&bull; <strong>Ethical Values:</strong> Supporting mindful living and a greener planet.</li>
+                <li>&bull; <strong>Personal Connection:</strong> A brand born from heritage, love, and care.</li>
+            </ul>
+        </section>
+
+        <section class="mb-4 py-1 text-center">
+            <h2 class="about-sub-h">Join Us</h2>
+            <div>Celebrate slow fashion, embrace natural beauty, and wear your values proudly.</div>
+            <div class="fw-bold">CHAAND — Guided by tradition, shaped by nature, and crafted for a better tomorrow!</div>
+        </section>
+    </section>
+</main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Section 1: Logo -->
+                <div class="col-md-4 text-center text-md-left mb-4" style="align-self: center;">
+                    <img src="images/footer_logo.png" alt="Brand Logo" class="img-fluid" style="max-width: 200px; align-items:center ; ">
+                    <!-- <p>Linen your way</p> -->
+                </div>
+
+                <!-- Section 2: Quick Links -->
+                <div class="col-md-4 mb-4">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="/wash-care">Wash Care</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/terms">Terms & Conditions</a></li>
+                        <li><a href="/delivery-return">Delivery & Return</a></li>
+                    </ul>
+                </div>
+
+                <!-- Section 3: Contact Information -->
+                <div class="col-md-4 mb-4 f-sec-3">
+                    <h4>Contact Us</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="mailto:your-email@example.com"><i class="fa-solid fa-envelope"></i> mokshiigada@gmail.com</a></li>
+                        <li><a href="tel:+1234567890"><i class="fa-solid fa-phone"></i> +1 (234) 567-890</a></li>
+                        <li><p>Social media: <a href="https://www.instagram.com/chaandbymokshii?igsh=dm93OHhjeDJ2b2Zz" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Pause animation on hover for better interactivity
+        const marqueeContainer = document.querySelector('.marquee-container');
+        const marqueeTexts = document.querySelectorAll('.marquee-text');
+
+        marqueeContainer.addEventListener('mouseenter', () => {
+            marqueeTexts.forEach(text => {
+                text.style.animationPlayState = 'paused';
+            });
+        });
+
+        marqueeContainer.addEventListener('mouseleave', () => {
+            marqueeTexts.forEach(text => {
+                text.style.animationPlayState = 'running';
+            });
+        });
+    </script>
+</body>
+</html>
