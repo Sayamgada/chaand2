@@ -222,25 +222,36 @@
 }
 
 /* carousel */
-.banner {
-    margin: 30px 0;
-    
+#carouselExample {
+    /* display: flex; */
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    overflow: hidden;
+    top: 20px;
 }
-.slider-container {
+
+.carousel {
+    
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+}
+
+.carousel-inner {
     display: flex;
     align-items: center;
     gap: 10px;
     border-radius: 10px;
-    overflow-y: hidden;  
-    scroll-snap-type: inline mandatory;
-    overscroll-behavior-inline: contain;
-    scrollbar-width: thin;
-    scrollbar-color: #166e22 #f0f0f0;
-    width: 100%;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
 }
 
-
-.slider-item {
+.carousel-item {
     position: relative;
     min-width: 100%;
     max-height: 450px;
@@ -250,23 +261,45 @@
     scroll-snap-align: start;
 }
 
-.slider-item .banner-img {
+.carousel-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: right;
+    object-position: center;
 }
 
 @media (min-width: 1024px) {
-    .slider-item {
+    .carousel-item {
         max-height: 600px;
     }
 }
 
+.carousel-indicators {
+    position: relative;
+    bottom: 30px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #888; */
+}
+
+.carousel-indicators button {
+    background-color: #ebe2d7;
+    border: none;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel-indicators button.active {
+    background-color: #166e22;
+}
 .banner-content {
     background: #ebe2d7;
     position: absolute;
-    bottom: 25px;
+    bottom: 40px;
     left: 25px;
     right: 25px;
     padding: 20px 25px;
