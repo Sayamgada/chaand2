@@ -179,27 +179,29 @@
 .terms-checkbox input:checked ~ .checkmark::after {
     display: block;
 }
-  
-
 .card {
-    width: 500px;
+    width: 100%;
     border: none;
-    height: 400px;
+    height: auto;
     z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: unset;
+    padding: 20px;
 }
 
 .card h6 {
     color: black;
-    font-size: 25px
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
 .inputs input {
     width: 50px;
-    height: 50px
+    height: 50px;
+    margin: 5px;
+    font-size: 20px;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -207,31 +209,7 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    margin: 0
-}
-
-.card-2 {
-    background-color: #fff;
-    padding: 10px;
-    width: 350px;
-    height: 100px;
-    bottom: -50px;
-    left: 20px;
-    position: absolute;
-    border-radius: 5px
-}
-
-.card-2 .content {
-    margin-top: 50px
-}
-
-.card-2 .content a {
-    color: red
-}
-
-.form-control:focus {
-    box-shadow: none;
-    border: 2px solid red
+    margin: 0;
 }
 
 .validate {
@@ -241,25 +219,89 @@ input[type=number]::-webkit-outer-spin-button {
     border: 1px solid rgb(61, 127, 50);
     width: 140px;
     color: white;
-    transition: color 0.3s ease
+    transition: color 0.3s ease;
+    margin-top: 15px;
 }
 
-.validate:hover{
+.validate:hover {
     background-color: rgb(61, 127, 50);
     border: 1px solid white;
     color: white;
 }
 
-.go-back{
+.go-back {
     font-size: large;
+    margin-top: 10px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 2px solid red;
 }
 
 @media (max-width: 992px) {
-    .contact1-pic {
-        display: none;
+    .card {
+        width: 80%;
     }
-    /* .register-form{
-        align-self: center;
-        justify-content: center;
-    } */
+    .card h6 {
+        font-size: 18px;
+    }
+    .inputs input {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+    .card {
+        width: 85%;
+        padding: 15px;
+    }
+    .card h6 {
+        font-size: 17px;
+    }
+    .inputs input {
+        width: 55px;
+        height: 55px;
+        font-size: 20px;
+    }
+    .validate {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        padding: 15px;
+    }
+    .card h6 {
+        font-size: 16px;
+    }
+    .inputs input {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+    .validate {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        padding: 10px;
+    }
+    .card h6 {
+        font-size: 14px;
+    }
+    .inputs input {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+    .validate {
+        width: 100%;
+    }
 }
