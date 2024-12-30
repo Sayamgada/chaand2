@@ -66,27 +66,39 @@
         
             <!-- desktop view -->
             <div class="icon-bar d-none d-lg-flex align-items-center ms-lg-3 order-2">
-                <a href="/cart" class="nav-link position-relative me-3">
+                <a href="my_cart.html" class="nav-link position-relative me-3">
                     <i class="fa fa-shopping-cart"></i>
                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
                 </a>
-                <a href="/account" class="nav-link">
-                    <i class="fa fa-user"></i>
-                </a>
+                <div class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-user"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="userDropdown" style="left: auto; right: 0;">
+                        <li><a href="my_acc_dashboard.html" class="dropdown-item">My Account</a></li>
+                        <li><a href="login.html" class="dropdown-item">Login</a></li>
+                    </ul>
+                </div>
             </div>
         
             <!-- mobile view -->
             <div class="icon-bar d-flex d-lg-none align-items-center order-1 ms-auto">
-                <a href="/cart" class="nav-link position-relative me-3">
+                <a href="my_cart.html" class="nav-link position-relative me-3">
                     <i class="fa fa-shopping-cart"></i>
                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
                 </a>
-                <a href="/account" class="nav-link">
-                    <i class="fa fa-user"></i>
-                </a>
+                <div class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-user"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="userDropdown" style="left: auto; right: 0;">
+                        <li><a href="my_acc_dashboard.html" class="dropdown-item">My Account</a></li>
+                        <li><a href="login.html" class="dropdown-item">Login</a></li>
+
+                    </ul>
+                </div>
             </div>
-        </div>
-        
+        </div> 
     </nav>
 
     <main class="container-fluid my-5 container-main">
