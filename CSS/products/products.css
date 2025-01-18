@@ -214,18 +214,13 @@
 }
 
 
-
-/* founders pick */
-.founder_pick
+.hr
 {
-    color: #166e22;
-    margin-top: 3%;
+    display: flex;
+    justify-self: center;
     border-top: 2px solid #166e22;
-    padding-top: 5px;
-}
-
-.heading{
-    color: #166e22;
+    width: 90vw;
+    margin-top: 3%;
 }
 
 /* founders pick */
