@@ -1,3 +1,6 @@
+@import url("../CSS/fonts.css");
+
+
 /* Marquee */
 .marquee-container {
     position: fixed;
@@ -18,6 +21,7 @@
     position: absolute;
     width: 100%;
     text-align: center;
+    font-family: Lora-regular;
     font-size: 1.3rem;
     font-weight: 500;
     color: #ffffff;
@@ -68,6 +72,7 @@
 }
 
 .navbar-nav li a {
+    font-family: Lora-regular;
     font-size: larger;
 }
 
@@ -341,4 +346,18 @@
 
 .banner-btn:hover {
     background: hsl(0, 0%, 13%);
+}
+
+@media (max-width: 425px) {
+
+    .banner-title
+    {
+        font-size: 1.2rem;
+    }
+
+}
+
+.container
+{
+    max-width: 100%;
 }
